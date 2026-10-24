@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherPro Dashboard</title>
+
+</head>
+
+
+<link rel="stylesheet" href="weatherpro_dashboard.css">
+
+<body>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🌤️</span><span>WeatherPro</span></div>
+      <label class="search"><span>⌕</span><input type="search" id="search-input"
+          placeholder="Search city, state or country..." aria-label="Search city, state or country"><button
+          id="searchbutton">></button></label>
+      <div class="location"><span class="pin">⊙</span>
+        <div><strong>Your Location</strong><small id="location-value1">New Delhi, India</small></div>
+      </div>
+      <div class="avatar" aria-label="User profile"></div>
+    </header>
+    <div class="main">
+      <aside class="sidebar">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="active"><span class="ico">⌂</span>Home</a>
+          <a href="weatherpro_hourly_temp.html" class="active"><span class="ico">◷</span>Hourly Forecast</a>
+          <a href="weatherpro_day_temp.html" class="active"><span class="ico">▦</span>16 Day Forecast</a>
+          <a href="#" class="active" style="background-color:#41b9f9; color: whitesmoke;"><span class="ico">◫</span>Maps</a>
+              <a href="mailto:avinashswarnkar99@gmail.com"class="active"><span class="ico">☎</span>Contect Us</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="mountain"><span class="peak"></span><span class="snow"></span></div>
+          <div class="tagline">☀️<br>Better weather.<br>Brighter days!<small>Stay informed. Stay prepared.</small></div>
+        </div>
+      </aside>
+     
+        <div id="map">
+          <iframe width="100%" height="100%" boder="none" allow="geolocation" src="https://api.maptiler.com/maps/hybrid-v4/?key=CgkbkciXOBdqNY1XCv7l#-0.2/0.00000/-47.09932"></iframe>
+          
+        </div>
+
+ 
+    </div>
+  </div>
+
+  <script src="weatherpro_map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherPro Dashboard</title>
+
+</head>
+
+
+<link rel="stylesheet" href="weatherpro_dashboard.css">
+
+<body>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🌤️</span><span>WeatherPro</span></div>
+      <label class="search"><span>⌕</span><input type="search" id="search-input"
+          placeholder="Search city, state or country..." aria-label="Search city, state or country"><button
+          id="searchbutton">></button></label>
+      <div class="location"><span class="pin">⊙</span>
+        <div><strong>Your Location</strong><small id="location-value1">New Delhi, India</small></div>
+      </div>
+      <div class="avatar" aria-label="User profile"></div>
+    </header>
+    <div class="main">
+      <aside class="sidebar">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="active"><span class="ico">⌂</span>Home</a>
+          <a href="#" class="active"style="background-color:#41b9f9; color: whitesmoke;"><span class="ico">◷</span>Hourly Forecast</a>
+          <a href="weatherpro_day_temp.html" class="active"><span class="ico">▦</span>16 Day Forecast</a>
+          <a href="weatherpro_map.html" class="active"><span class="ico">◫</span>Maps</a>
+              <a href="mailto:avinashswarnkar99@gmail.com"class="active"><span class="ico">☎</span>Contect Us</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="mountain"><span class="peak"></span><span class="snow"></span></div>
+          <div class="tagline">☀️<br>Better weather.<br>Brighter days!<small>Stay informed. Stay prepared.</small></div>
+        </div>
+      </aside>
+      <main class="content">
+
+        <style>
+          table {
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+          }
+          @media(max-width:900px){
+           table {
+            position: absolute;
+            margin-top: -230px;
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+          }
+
+          }
+
+          th {
+            background: #41b9f9;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+          }
+
+          td {
+            height: 40px;
+            padding: 10px 25px;
+            text-align: center;
+            color: #1b8cc9;
+
+          }
+
+          tbody tr:nth-child(odd) {
+            background: white;
+          }
+
+          tbody tr:nth-child(even) {
+            background: #5b82b922;
+          }
+
+          tbody tr:hover {
+            background: #e2e4f5;
+          }
+        </style>
+
+        <table>
+          <thead>
+            <tr>
+              <th>TIME</th>
+              <th>TEMPERATURE</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+            <tr>
+              <td class="h_time"></td>
+              <td class="h_temp"></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </main>
+    </div>
+  </div>
+  <script src="weatherpro_hourly_temp.html.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherPro Dashboard</title>
+  
+</head>
+
+
+<link rel="stylesheet"  href="weatherpro_dashboard.css"
+<body>
+  
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🌤️</span><span>WeatherPro</span></div>
+      <label class="search"><span>⌕</span><input type="search" id="search-input" placeholder="Search city, state or country..."
+          aria-label="Search city, state or country"><button id="searchbutton">></button></label>
+      <div class="location"><span class="pin">⊙</span>
+        <div><strong>Your Location</strong><small id="location-value1">New Delhi, India</small></div>
+      </div>
+      <div class="avatar" aria-label="User profile"></div>
+    </header>
+    <div class="main">
+      <aside class="sidebar">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#" class="active" style="background-color:#41b9f9; color: whitesmoke;"><span class="ico" >⌂</span>Home</a>
+          <a href="weatherpro_hourly_temp.html" class="active"><span class="ico">◷</span>Hourly Forecast</a>
+          <a href="weatherpro_day_temp.html" class="active"><span class="ico">▦</span>16 Day Forecast</a>
+          <a href="weatherpro_map.html"class="active"><span class="ico">◫</span>Maps</a>
+          <a href="mailto:avinashswarnkar99@gmail.com"class="active"><span class="ico">☎</span>Contect Us</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="mountain"><span class="peak"></span><span class="snow"></span></div>
+          <div class="tagline">☀️<br>Better weather.<br>Brighter days!<small>Stay informed. Stay prepared.</small></div>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="center-column">
+          <section class="hero">
+            <div class="hero-top"><span class="pin">📍</span>
+              <div id="location-value">New Delhi, India<small id="today">16-10-2026&nbsp; • &nbsp;07:42  night</small></div>
+            </div>
+            <div class="weather-art">🌤️</div>
+            <div class="temperature"><span id="temperature-value">28</span><span>°C</span></div>
+            <div class="condition">Partly Cloudy</div>
+            <div class="feels">Feels like 31°C</div>
+            <div class="hero-stats">
+              <div class="stat"><span class="ico">♨</span>
+                <div><small>Humidity</small><strong id="humidity-value">62<em>%</em></strong></div>
+              </div>
+              <div class="stat"><span class="ico">≋</span>
+                <div><small>Wind Speed</small><strong id="wind-speed-value">12<em> km/h</em></strong></div>
+              </div>
+              <div class="stat"><span class="ico">◉</span>
+                <div><small>Pressure</small><strong id="pressure-value">1012<em> hPa</em></strong></div>
+              </div>
+              <div class="stat"><span class="ico">◎</span>
+                <div><small>cloud cover</small><strong id="cloud-cover">10<em> %</em></strong></div>
+              </div>
+            </div>
+          </section>
+          <section class="panel" id="panel">
+            <h2 class="panel-heading"><span class="ico">◷</span>Hourly Forecast <span class="more"> <a href="weatherpro_hourly_temp.html" id="a">Next 24 Hours >></a>
+                </span></h2>
+            <div class="hourly-grid">
+              <div class="forecast-card">
+                <div class="time">Now</div>
+                <div class="weather">🌤️</div><strong class="hourly-temp">28°</strong><small>Partly Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">8 PM</div>
+                <div class="weather">🌤️</div><strong class="hourly-temp">27°</strong ><small>Partly Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">9 PM</div>
+                <div class="weather">🌥️</div><strong class="hourly-temp">26°</strong><small>Mostly Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">10 PM</div>
+                <div class="weather">🌧️</div><strong class="hourly-temp">25°</strong><small>Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">11 PM</div>
+                <div class="weather">🌧️</div><strong class="hourly-temp">24°</strong><small>Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">12 AM</div>
+                <div class="weather">🌧️</div><strong class="hourly-temp" >23°</strong><small>Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">1 AM</div>
+                <div class="weather">🌧️</div><strong class="hourly-temp">22°</strong><small>Cloudy</small>
+              </div>
+              <div class="forecast-card">
+                <div class="time">2 AM</div>
+                <div class="weather">🌧️</div><strong class="hourly-temp">21°</strong><small>Cloudy</small>
+              </div>
+            </div>
+          </section>
+          <section class="panel" id="panel7day">
+            <h2 class="panel-heading"><span class="ico">▦</span>7 Day Forecast <span class="more"><a href="weatherpro_day_temp.html" id="a">Next 7 days >></a>
+                </span></h2>
+            <div class="daily-grid">
+              <div class="daily-card"><strong>Mon</strong>
+                <div class="date">Oct 16</div>
+                <div class="weather">🌤️</div>
+                <div class="temps daily-temp" >28°<span> / 20°</span></div><small>Partly Cloudy</small>
+              </div>
+              <div class="daily-card"><strong>Tue</strong>
+                <div class="date">Oct 17</div>
+                <div class="weather">☀️</div>
+                <div class="temps daily-temp" >30°<span> / 21°</span></div><small>Sunny</small>
+              </div>
+              <div class="daily-card"><strong>Wed</strong>
+                <div class="date">Oct 18</div>
+                <div class="weather">🌧️</div>
+                <div class="temps daily-temp" >27°<span> / 19°</span></div><small>Light Rain</small>
+              </div>
+              <div class="daily-card"><strong>Thu</strong>
+                <div class="date">Oct 19</div>
+                <div class="weather">☁️</div>
+                <div class="temps daily-temp" >26°<span> / 18°</span></div><small>Cloudy</small>
+              </div>
+              <div class="daily-card"><strong>Fri</strong>
+                <div class="date">Oct 20</div>
+                <div class="weather">☀️</div>
+                <div class="temps daily-temp" >29°<span> / 20°</span></div><small>Sunny</small>
+              </div>
+              <div class="daily-card"><strong>Sat</strong>
+                <div class="date">Oct 21</div>
+                <div class="weather">🌤️</div>
+                <div class="temps daily-temp" >31°<span> / 22°</span></div><small>Partly Cloudy</small>
+              </div>
+              <div class="daily-card"><strong>Sun</strong>
+                <div class="date">Oct 22</div>
+                <div class="weather">🌧️</div>
+                <div class="temps daily-temp" >28°<span> / 20°</span></div><small>Showers</small>
+              </div>
+            </div>
+          </section>
+        </div>
+        <aside class="right-column">
+          <section class="panel details">
+            <h2 class="panel-heading"><span class="ico">☼</span>Today's Details</h2>
+            <div class="detail-row"><span class="ico">♨</span><span>Temperature</span><strong id="temperature-value1">28°C</strong></div>
+            <div class="detail-row"><span class="ico">♙</span><span>surface_pressure</span><strong id="surface_pressure">31%</strong></div>
+            <div class="detail-row"><span class="ico">♧</span><span>Humidity</span><strong id="humidity-value1">62%</strong></div>
+            <div class="detail-row"><span class="ico">≋</span><span>Wind Speed</span><strong id="wind-speed-value1">12 km/h</strong></div>
+            <div class="detail-row"><span class="ico">◉</span><span>Pressure</span><strong id="pressure-value1">1012 hPa</strong></div>
+            <div class="detail-row"><span class="ico">◎</span><span>cloud cover</span><strong id="cloud-cover1">31%</strong></div>
+          </section>
+          <section class="panel air-panel">
+            <h2 class="panel-heading"><span class="ico">♧</span>Air Quality</h2>
+            <div class="gauge">
+              <svg viewBox="0 0 150 124" aria-hidden="true">
+                <path d="M20 105 A56 56 0 0 1 130 105" fill="none" stroke="#edf4fc" stroke-width="10"
+                  stroke-linecap="round" />
+                <path d="M20 105 A56 56 0 0 1 65 50" fill="none" stroke="#32c27e" stroke-width="10"
+                  stroke-linecap="round" />
+              </svg>
+              <div class="gauge-text">Good<small>AQI&nbsp; 42</small></div>
+            </div>
+            <div class="air-note"><span class="bubble">♧</span><span>Air quality is satisfactory<br>and poses little or
+                no risk.</span></div>
+          </section>
+          <section class="panel tips">
+            <h2 class="panel-heading"><span class="ico">♧</span>Weather Tips</h2>
+            <div class="tip"><span class="tip-icon">☂</span>
+              <div><strong>Carry an umbrella</strong><small>(Chance of rain tomorrow)</small></div>
+            </div>
+            <div class="tip"><span class="tip-icon">♧</span>
+              <div><strong>Wear light clothing</strong><small>(Temperature is comfortable)</small></div>
+            </div>
+            <div class="tip"><span class="tip-icon">♙</span>
+              <div><strong>Stay hydrated</strong><small>(Humidity is moderate)</small></div>
+            </div>
+          </section>
+        </aside>
+        <footer class="footer">© 2026 WeatherPro. All rights reserved.</footer>
+      </main>
+    </div>
+  </div>
+  <script src="weatherpro_deshboard.js"></script>
+</body>
+</html>
